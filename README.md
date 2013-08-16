@@ -4,7 +4,8 @@ Project Euler Solutions in Clojure
 
 ## Usage
 
-    Run euler-clojure with the name of a Project Euler problem and the solution will be sent to standard output
+    Run euler-clojure with the name of a Project Euler problem
+    and the solution will be sent to standard output
     $ lein run <problem name>
 
     Example:
