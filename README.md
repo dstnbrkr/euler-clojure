@@ -9,6 +9,7 @@ Project Euler Solutions in Clojure
 
     Example:
     $ lein run p001
+    233168
 
 ## Contact
 
