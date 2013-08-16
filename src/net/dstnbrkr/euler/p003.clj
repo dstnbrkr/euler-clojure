@@ -6,6 +6,8 @@
 ;
 ; Copyright (c) 2012 Dustin Barker
 
+(ns net.dstnbrkr.euler.p003)
+
 (defn proper-divisor? [m n]
   (and (> n 1) (< n m) (zero? (mod m n))))
 
@@ -20,4 +22,5 @@
 (defn largest-prime-factor [n]
   (first (filter prime? (proper-divisors n))))
 
-(println (largest-prime-factor 600851475143))
+(defn p003 []
+  (largest-prime-factor 600851475143))

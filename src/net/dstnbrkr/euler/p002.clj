@@ -6,6 +6,8 @@
 ;
 ; Copyright (c) 2012 Dustin Barker
 
+(ns net.dstnbrkr.euler.p002)
+
 (defn fibonacci
   ([] (fibonacci 1 1))
   ([m n] (cons m (lazy-seq (fibonacci n (+ m n))))))
@@ -18,4 +20,5 @@
           (add (rest currlist) (+ n sum)))))
   (add list 0))
 
-(println (sum-list (filter even? (fibonacci)) 4000000))
+(defn p002 []
+  (sum-list (filter even? (fibonacci)) 4000000))

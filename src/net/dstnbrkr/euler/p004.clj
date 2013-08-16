@@ -6,6 +6,8 @@
 ;
 ; Copyright (c) 2012 Dustin Barker
 
+(ns net.dstnbrkr.euler.p004)
+
 (require '[clojure.string :as s])
 
 (defn cartesian-product [r] ; r * r
@@ -15,7 +17,8 @@
   (let [s (str n)]
     (= s (s/reverse s))))
 
-(println (reduce max (filter palindrome? (cartesian-product (range 100 1000)))))
+(defn p004 []
+  (reduce max (filter palindrome? (cartesian-product (range 100 1000)))))
 
 
 

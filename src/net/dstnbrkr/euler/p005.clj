@@ -6,6 +6,8 @@
 ;
 ; Copyright (c) 2012 Dustin Barker
 
+(ns net.dstnbrkr.euler.p005)
+
 (defn proper-divisor? [m n]
   (and (< n m) (zero? (mod m n))))
 
@@ -28,6 +30,8 @@
       (map prime-factors (proper-divisors n))))
 
 (number? 12)
+
+(defn p005 [] nil)
 
 ; 10: ((2 1) (5 1))
 ; 12: ((2 2) (3 1))
